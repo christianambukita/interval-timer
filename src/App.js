@@ -108,8 +108,6 @@ export default function App() {
       .map((char, i) => <span key={i} className="timer-digit">{char}</span>)
   }
 
-
-
   return (
     <div className="App">
       <div id="container">
