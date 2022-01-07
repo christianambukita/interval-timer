@@ -2,124 +2,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-  --main-color: #000000bb;
-  --accent-color: #2c2c2c;
-  --font-color: hsl(44, 100%, 50%);
-  --alert-color: hsl(15, 90%, 50%); 
-  --inner-border: #ffa6006e;
+	--main-color: #000000bb;
+	--accent-color: #2c2c2c;
+	--font-color: hsl(44, 100%, 50%);
+	--alert-color: hsl(15, 90%, 50%);
+	--inner-border: #ffa6006e;
 }
 
-p{
-  margin: 0.5em;
+p {
+	margin: 0.5em;
 }
 
-body{
-  color: var(--font-color);
-  background-color: var(--main-color);
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  margin:0;
+body {
+	color: var(--font-color);
+	background-color: var(--main-color);
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	margin: 0;
 }
 
-.App{
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
+.App {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
 }
-#container{
-  width: 100%;
-  margin: 10vh 0 0;
-  position:relative;
-  min-width: 340px;
+#container {
+	width: 100%;
+	margin: 10vh 0 0;
+	position: relative;
+	min-width: 340px;
 }
-#timer-value{
-  font-family: 'Orbitron', sans-serif;
-  margin:0.1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#timer-value {
+	font-family: 'Orbitron', sans-serif;
+	margin: 0.1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-#timer-label{
-  font-size: 30px;
-  margin: 0.5em;
-  letter-spacing: .2em;
+#timer-label {
+	font-size: 30px;
+	margin: 0.5em;
+	letter-spacing: 0.2em;
 }
 
 #session-label,
-#break-label
-{
-  font-size:16px;
+#break-label {
+	font-size: 16px;
 }
 
-#timer{
-  font-size: 90px;
+#timer {
+	font-size: 90px;
 
-  background-color: var(--accent-color);
-  border: 2px solid var(--font-color);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding-bottom: 30px;
+	background-color: var(--accent-color);
+	border: 2px solid var(--font-color);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-bottom: 30px;
 }
 
 #session,
-#break
-{
-  font-family: 'Orbitron', sans-serif;
-  width: 40%;
-  position: absolute;
-  background-color: var(--accent-color);
-  border: 2px solid var(--font-color);
-  border-top: none;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+#break {
+	font-family: 'Orbitron', sans-serif;
+	width: 40%;
+	position: absolute;
+	background-color: var(--accent-color);
+	border: 2px solid var(--font-color);
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
-#break{
-  right: 0;
+#break {
+	right: 0;
 }
 
-.buttons{
-  display:flex;
-
+.buttons {
+	display: flex;
 }
 
-.vertical-line{
-  border-right: 1px solid var(--inner-border);
+.vertical-line {
+	border-right: 1px solid var(--inner-border);
 }
 
-.symbol{
-  width: 50%;
-  border-top: 1px solid var(--inner-border);
-  margin: 0;
-  padding: 0.2em 0 0.2em 0;
-  cursor: pointer;
+.symbol {
+	width: 50%;
+	border-top: 1px solid var(--inner-border);
+	margin: 0;
+	padding: 0.2em 0 0.2em 0;
+	cursor: pointer;
 }
 
 .symbol:hover,
-.control:hover{
-  font-weight: 700;
-  text-shadow:  0px 0px 10px var(--font-color);
+.control:hover {
+	font-weight: 700;
+	text-shadow: 0px 0px 10px var(--font-color);
 }
 
-#controls{
-  font-size: 20px;
-  display: flex;
-  justify-content: space-around;
+#controls {
+	font-size: 20px;
+	display: flex;
+	justify-content: space-around;
 }
 
-.control{
-  padding:20px;
-  width: 30%;
-  cursor: pointer;
+.control {
+	padding: 20px;
+	width: 30%;
+	cursor: pointer;
 }
 
-.timer-digit{
-  display: block;
-  width: 1ch;
+.timer-digit {
+	display: block;
+	width: 1ch;
 }
 
-@media(min-width: 700px){
-  #container{
-    width: 660px;
-  }
+@media (min-width: 700px) {
+	#container {
+		width: 660px;
+	}
 }
